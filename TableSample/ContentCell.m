@@ -85,6 +85,7 @@
 }
 
 #pragma mark - Static Methods
+
 + (CGFloat)desiredHeight {
   return 130.0f;
 }
