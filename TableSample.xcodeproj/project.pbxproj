@@ -33,7 +33,6 @@
 		6E6D1D0B17D691D400305668 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1D0A17D691D400305668 /* AdSupport.framework */; };
 		6E6D1D0D17D691DD00305668 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1D0C17D691DC00305668 /* CoreTelephony.framework */; };
 		6E6D1D0F17D691E600305668 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1D0E17D691E600305668 /* ImageIO.framework */; };
-		6E6D1D1117D6925200305668 /* NamoAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1D1017D6925200305668 /* NamoAdsSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +68,6 @@
 		6E6D1D0A17D691D400305668 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6E6D1D0C17D691DC00305668 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6E6D1D0E17D691E600305668 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		6E6D1D1017D6925200305668 /* NamoAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NamoAdsSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 				14E8EF8117D52B390006A0C1 /* UIKit.framework in Frameworks */,
 				14E8EF8317D52B390006A0C1 /* Foundation.framework in Frameworks */,
 				14E8EFB017D52D2E0006A0C1 /* Parse.framework in Frameworks */,
-				6E6D1D1117D6925200305668 /* NamoAdsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +122,6 @@
 		14E8EF7F17D52B390006A0C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E6D1D1017D6925200305668 /* NamoAdsSDK.framework */,
 				14E8EFB117D52D460006A0C1 /* AudioToolbox.framework */,
 				14E8EFB317D52D4C0006A0C1 /* CFNetwork.framework */,
 				14E8EF8417D52B390006A0C1 /* CoreGraphics.framework */,
