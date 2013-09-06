@@ -29,6 +29,8 @@
 		6E6D1E2917DA5A8000305668 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E2817DA5A8000305668 /* StoreKit.framework */; };
 		6E6D1E2B17DA5A8700305668 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E2A17DA5A8700305668 /* SystemConfiguration.framework */; };
 		6E6D1E2D17DA5A9A00305668 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E2C17DA5A9A00305668 /* CoreLocation.framework */; };
+		6E6D1E3017DA5B5E00305668 /* appicon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6D1E2E17DA5B5E00305668 /* appicon_57.png */; };
+		6E6D1E3117DA5B5E00305668 /* appicon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6D1E2F17DA5B5E00305668 /* appicon_114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		6E6D1E2817DA5A8000305668 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6E6D1E2A17DA5A8700305668 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6E6D1E2C17DA5A9A00305668 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6E6D1E2E17DA5B5E00305668 /* appicon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_57.png; sourceTree = "<group>"; };
+		6E6D1E2F17DA5B5E00305668 /* appicon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		6E6D1DFA17DA589800305668 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E6D1E2E17DA5B5E00305668 /* appicon_57.png */,
+				6E6D1E2F17DA5B5E00305668 /* appicon_114.png */,
 				6E6D1DFB17DA589800305668 /* TableSample-Info.plist */,
 				6E6D1DFC17DA589800305668 /* InfoPlist.strings */,
 				6E6D1DFF17DA589800305668 /* main.m */,
@@ -216,6 +222,8 @@
 				6E6D1E0817DA589800305668 /* Default@2x.png in Resources */,
 				6E6D1E0A17DA589800305668 /* Default-568h@2x.png in Resources */,
 				6E6D1E1817DA590900305668 /* InfoPlist.strings in Resources */,
+				6E6D1E3017DA5B5E00305668 /* appicon_57.png in Resources */,
+				6E6D1E3117DA5B5E00305668 /* appicon_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
