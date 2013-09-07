@@ -142,13 +142,12 @@
 		6E6D1DF917DA589800305668 /* TableSample */ = {
 			isa = PBXGroup;
 			children = (
-				6E6D1E1017DA590900305668 /* ContentCell.h */,
-				6E6D1E1117DA590900305668 /* ContentCell.m */,
-				6E6D1E1217DA590900305668 /* en.lproj */,
-				6E6D1E1517DA590900305668 /* MainViewController.h */,
-				6E6D1E1617DA590900305668 /* MainViewController.m */,
 				6E6D1E0217DA589800305668 /* AppDelegate.h */,
 				6E6D1E0317DA589800305668 /* AppDelegate.m */,
+				6E6D1E1017DA590900305668 /* ContentCell.h */,
+				6E6D1E1117DA590900305668 /* ContentCell.m */,
+				6E6D1E1517DA590900305668 /* MainViewController.h */,
+				6E6D1E1617DA590900305668 /* MainViewController.m */,
 				6E6D1DFA17DA589800305668 /* Supporting Files */,
 			);
 			path = TableSample;
@@ -157,6 +156,7 @@
 		6E6D1DFA17DA589800305668 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E6D1E1217DA590900305668 /* en.lproj */,
 				6E6D1E2E17DA5B5E00305668 /* appicon_57.png */,
 				6E6D1E2F17DA5B5E00305668 /* appicon_114.png */,
 				6E6D1DFB17DA589800305668 /* TableSample-Info.plist */,
