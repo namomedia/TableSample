@@ -21,7 +21,7 @@
 #import <Namo/Namo.h>
 #import <UIKit/UIKit.h>
 
-@interface AdContentCell : UITableViewCell<NAMOTableViewAdCell>
+@interface AdContentCell : UITableViewCell<NAMOAdCell>
 
 @property(strong, nonatomic) UILabel *labelTitle;
 @property(strong, nonatomic) UILabel *labelLikes;
