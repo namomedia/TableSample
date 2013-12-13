@@ -18,6 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#import <Namo/Namo.h>
 #import <Parse/Parse.h>
 
 #import "MainViewController.h"
@@ -26,6 +27,7 @@
 
 @interface MainViewController ()
 @property(nonatomic, strong) NSArray *content;
+@property(nonatomic, strong) NAMOAdPlacer *adPlacer;
 @end
 
 @implementation MainViewController
@@ -44,11 +46,15 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-
   self.title = @"TableSample";
-  
   [self.tableView registerClass:[ContentCell class]
          forCellReuseIdentifier:[ContentCell reuseIdentifier]];
+  
+  // Namo Media initialization:
+  self.adPlacer = [NAMOAdPlacer adPlacer];
+  [self.adPlacer bindToTableView:self.tableView];
+  [self.tableView namo_registerAdCellClass:[NAMOAdCellTableSample1 class]];
+  [self.adPlacer requestAds:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -59,7 +65,7 @@
   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
     if (!error) {
       self.content = objects;
-      [self.tableView reloadData];
+      [self.tableView namo_reloadData];
     } else {
       // Log details of the failure
       NSLog(@"Error: %@ %@", error, [error userInfo]);

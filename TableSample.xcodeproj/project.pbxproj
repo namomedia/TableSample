@@ -34,6 +34,8 @@
 		6E6D1E3E17DA71D300305668 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E3D17DA71D300305668 /* CoreTelephony.framework */; };
 		6E6D1E4017DA71E000305668 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E3F17DA71E000305668 /* ImageIO.framework */; };
 		6E6D1E4217DA720600305668 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E4117DA720600305668 /* MediaPlayer.framework */; };
+		D8ACE887185B9DF200F307CD /* Namo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ACE886185B9DF100F307CD /* Namo.framework */; };
+		D8ACE889185B9E7500F307CD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ACE888185B9E7500F307CD /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		6E6D1E3D17DA71D300305668 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6E6D1E3F17DA71E000305668 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6E6D1E4117DA720600305668 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D8ACE886185B9DF100F307CD /* Namo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Namo.framework; sourceTree = "<group>"; };
+		D8ACE888185B9E7500F307CD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8ACE889185B9E7500F307CD /* AdSupport.framework in Frameworks */,
 				6E6D1E4217DA720600305668 /* MediaPlayer.framework in Frameworks */,
 				6E6D1E4017DA71E000305668 /* ImageIO.framework in Frameworks */,
+				D8ACE887185B9DF200F307CD /* Namo.framework in Frameworks */,
 				6E6D1E3E17DA71D300305668 /* CoreTelephony.framework in Frameworks */,
 				6E6D1E2D17DA5A9A00305668 /* CoreLocation.framework in Frameworks */,
 				6E6D1E2B17DA5A8700305668 /* SystemConfiguration.framework in Frameworks */,
@@ -119,6 +125,8 @@
 		6E6D1DF217DA589800305668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8ACE888185B9E7500F307CD /* AdSupport.framework */,
+				D8ACE886185B9DF100F307CD /* Namo.framework */,
 				6E6D1E4117DA720600305668 /* MediaPlayer.framework */,
 				6E6D1E3F17DA71E000305668 /* ImageIO.framework */,
 				6E6D1E3D17DA71D300305668 /* CoreTelephony.framework */,
@@ -338,7 +346,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/joe/Development/repos/namomedia/TableSample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSample/TableSample-Prefix.pch";
@@ -353,7 +362,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/joe/Development/repos/namomedia/TableSample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSample/TableSample-Prefix.pch";

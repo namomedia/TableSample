@@ -18,6 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#import <Namo/Namo.h>
 #import <Parse/Parse.h>
 
 #import "AppDelegate.h"
@@ -28,11 +29,12 @@
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [Parse setApplicationId:@"U8ipUhuguVcq8zid2nIH1OU7jvwYuBi2G2QBzUqT"
                 clientKey:@"JYq1sRB1ZBh6AmD0UvGNVsLq5DwyIr5PnZikF1QN"];
-
+  [Namo setApplicationId:@"app-test-id"];
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   MainViewController *mainVC = [[MainViewController alloc] init];
   UINavigationController
       *navigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
+
   [self.window setRootViewController:navigationController];
   [self.window makeKeyAndVisible];
 
