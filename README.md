@@ -9,3 +9,4 @@ http://www.youtube.com/user/nativeads/videos
 The screencast may not be completely up-to-date with the latest SDK. For our up-to-date 'Getting Started' guide, see 
 http://docs.namomedia.com/ios.
 
+To see an example after integration, check out the branch 'namo-integrated.'
