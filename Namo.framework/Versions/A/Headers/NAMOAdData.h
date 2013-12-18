@@ -136,7 +136,7 @@ typedef void(^NAMO_ImageLoadedBlock)(UIImageView *imageView, NSError *error);
  been set to the result of the image request. You can, for example, use this success block to
  provide transition effects on the view.
 
- @param adData Ad data downloaded from the server.
+ @param imageView The UIImageView that will hold the ad image.
  @param placeholder An optionally-nil image to place in the UIImageView before the ad request
  completes.
  @param completedBlock A block to execute after the image request completes.
