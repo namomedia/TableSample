@@ -100,10 +100,10 @@
  `UICollectionView` bound to an ad placer. Otherwise you may receive
  `NSInternalInconsistencyException` errors.
 
- @param indexPaths An array of NSIndexPath identifying the item locations to add.
+ @param originalIndexPaths An array of NSIndexPath identifying the item locations to add.
  @available Namo 1.0 and later.
  */
-- (void)namo_insertItemsAtIndexPaths:(NSArray *)origianlIndexPaths;
+- (void)namo_insertItemsAtIndexPaths:(NSArray *)originalIndexPaths;
 
 /**
  Delete items in the receiver at the locations identified by an array of index paths. This will notify
@@ -113,7 +113,7 @@
  `UICollectionView` bound to an ad placer. Otherwise you may receive
  `NSInternalInconsistencyException` errors.
 
- @param indexPaths An array of NSIndexPath identifying the items to delete.
+ @param originalIndexPaths An array of NSIndexPath identifying the items to delete.
  @available Namo 1.0 and later.
  */
 - (void)namo_deleteItemsAtIndexPaths:(NSArray *)originalIndexPaths;
@@ -138,7 +138,7 @@
  for a `UICollectionView` bound to an ad placer. Otherwise you may receive
  `NSInternalInconsistencyException` errors.
 
- @param indexPath The index path at which the item currently exists.
+ @param originalIndexPath The index path at which the item currently exists.
  @param newIndexPath The index path to move the item to.
  @available Namo 1.0 or later.
 */
@@ -161,7 +161,7 @@
  You must replace all calls to `[collectionView selectItemsAtIndexPath:animated:scrollPosition:]` 
  with this method for a `UICollectionView` bound to an ad placer.
  
- @param originalIndexPath the index path of the row to select. If you get the index path from a
+ @param originalIndexPath The index path of the row to select. If you get the index path from a
  collectionView method you should call [indexPathAdjuster originalIndexPath:] to get the value to use
  in this method.
  @param animated Specify YES to animate the change in the selection or NO to make the change without

@@ -136,7 +136,7 @@
  You must replace all calls to `[tableView deselectRowAtIndexPath:animated:]` with this
  method for a `UITableView` bound to an ad placer.
  
- @param originalIndexPath the index path of the row to deselect.
+ @param indexPath the index path of the row to deselect.
  @param animated Specify YES to animate the change in selection.
  @available Namo 1.0 and later.
  */

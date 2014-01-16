@@ -18,6 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#import <AdSupport/AdSupport.h>
 #import <Namo/Namo.h>
 #import <Parse/Parse.h>
 
@@ -51,6 +52,8 @@
          forCellReuseIdentifier:[ContentCell reuseIdentifier]];
   
   // Namo Media initialization:
+  NSString *testId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+  [Namo setTestDevices:[NSArray arrayWithObjects:testId, nil] includeSimulator:YES];
   self.adPlacer = [NAMOAdPlacer adPlacer];
   [self.adPlacer bindToTableView:self.tableView];
   [self.tableView namo_registerAdCellClass:[NAMOAdCellTableSample1 class]];
