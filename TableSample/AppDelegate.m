@@ -28,6 +28,9 @@
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [Parse setApplicationId:@"U8ipUhuguVcq8zid2nIH1OU7jvwYuBi2G2QBzUqT"
                 clientKey:@"JYq1sRB1ZBh6AmD0UvGNVsLq5DwyIr5PnZikF1QN"];
+  // [Namo setApplicationId:@"app-test-id"];
+  ///NSString *testId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+  // [Namo setTestDevices:@[testId] includeSimulator:YES];
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   MainViewController *mainVC = [[MainViewController alloc] init];
