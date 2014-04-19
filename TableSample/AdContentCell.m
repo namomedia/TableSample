@@ -22,19 +22,19 @@
 
 @implementation AdContentCell
 
-+ (NSString *)reuseIdentifier {
++ (NSString *)formatIdentifier {
   return @"AdContentCell";
 }
 
-+ (CGFloat)cellHeightWithData:(NAMOAdData *)adData andWidth:(CGFloat)width {
-  return 130.0f;
++ (CGSize)sizeWithMaxWidth:(CGFloat)width {
+  return CGSizeMake(width, 130.0f);
 }
 
 - (void)setAdData:(NAMOAdData *)adData {
-  self.labelRepinnedBy.text = adData.advertiserName;
-  self.labelTitle.text = adData.text;
-  [self.imageViewPicture namo_bindAdImage:adData];
-  [self.imageViewRepinnedBy namo_bindAdIcon:adData];
+  [adData loadTextIntoLabel:self.labelTitle];
+  [adData loadImageIntoImageView:self.imageViewPicture];
+  [adData loadAdvertiserNameIntoLabel:self.labelRepinnedBy];
+  [adData loadAdvertiserIconIntoImageView:self.imageViewRepinnedBy];
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {

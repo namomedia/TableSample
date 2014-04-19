@@ -34,6 +34,7 @@
 		6E6D1E3E17DA71D300305668 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E3D17DA71D300305668 /* CoreTelephony.framework */; };
 		6E6D1E4017DA71E000305668 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E3F17DA71E000305668 /* ImageIO.framework */; };
 		6E6D1E4217DA720600305668 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E4117DA720600305668 /* MediaPlayer.framework */; };
+		6EEA7C4218FD09E40001E2B0 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA7C4118FD09E40001E2B0 /* FBMissingSymbols.m */; };
 		D808C9AC18C63BF100EC0FBD /* Namo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D808C9AB18C63BF100EC0FBD /* Namo.framework */; };
 		D8ACE889185B9E7500F307CD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ACE888185B9E7500F307CD /* AdSupport.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		6E6D1E3D17DA71D300305668 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6E6D1E3F17DA71E000305668 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6E6D1E4117DA720600305668 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6EEA7C4118FD09E40001E2B0 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
 		D808C9AB18C63BF100EC0FBD /* Namo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Namo.framework; sourceTree = "<group>"; };
 		D8ACE888185B9E7500F307CD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			children = (
 				6E6D1DF917DA589800305668 /* TableSample */,
 				6E6D1DF217DA589800305668 /* Frameworks */,
+				6E6D1E2017DA5A6100305668 /* libz.1.1.3.dylib */,
 				6E6D1DF117DA589800305668 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,22 +130,21 @@
 			children = (
 				D808C9AB18C63BF100EC0FBD /* Namo.framework */,
 				D8ACE888185B9E7500F307CD /* AdSupport.framework */,
-				6E6D1E4117DA720600305668 /* MediaPlayer.framework */,
-				6E6D1E3F17DA71E000305668 /* ImageIO.framework */,
-				6E6D1E3D17DA71D300305668 /* CoreTelephony.framework */,
-				6E6D1E2C17DA5A9A00305668 /* CoreLocation.framework */,
-				6E6D1E2A17DA5A8700305668 /* SystemConfiguration.framework */,
-				6E6D1E2817DA5A8000305668 /* StoreKit.framework */,
-				6E6D1E2617DA5A7800305668 /* Security.framework */,
-				6E6D1E2417DA5A7100305668 /* QuartzCore.framework */,
-				6E6D1E2217DA5A6800305668 /* MobileCoreServices.framework */,
-				6E6D1E2017DA5A6100305668 /* libz.1.1.3.dylib */,
-				6E6D1E1E17DA5A4E00305668 /* CFNetwork.framework */,
 				6E6D1E1C17DA5A4500305668 /* AudioToolbox.framework */,
-				6E6D1E1A17DA5A2000305668 /* Parse.framework */,
-				6E6D1DF317DA589800305668 /* UIKit.framework */,
-				6E6D1DF517DA589800305668 /* Foundation.framework */,
+				6E6D1E1E17DA5A4E00305668 /* CFNetwork.framework */,
 				6E6D1DF717DA589800305668 /* CoreGraphics.framework */,
+				6E6D1E2C17DA5A9A00305668 /* CoreLocation.framework */,
+				6E6D1E3D17DA71D300305668 /* CoreTelephony.framework */,
+				6E6D1DF517DA589800305668 /* Foundation.framework */,
+				6E6D1E3F17DA71E000305668 /* ImageIO.framework */,
+				6E6D1E4117DA720600305668 /* MediaPlayer.framework */,
+				6E6D1E2217DA5A6800305668 /* MobileCoreServices.framework */,
+				6E6D1E1A17DA5A2000305668 /* Parse.framework */,
+				6E6D1E2417DA5A7100305668 /* QuartzCore.framework */,
+				6E6D1E2617DA5A7800305668 /* Security.framework */,
+				6E6D1E2817DA5A8000305668 /* StoreKit.framework */,
+				6E6D1E2A17DA5A8700305668 /* SystemConfiguration.framework */,
+				6E6D1DF317DA589800305668 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 				6E6D1E1517DA590900305668 /* MainViewController.h */,
 				6E6D1E1617DA590900305668 /* MainViewController.m */,
 				6E6D1DFA17DA589800305668 /* Supporting Files */,
+				6EEA7C4118FD09E40001E2B0 /* FBMissingSymbols.m */,
 			);
 			path = TableSample;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				6E6D1E0017DA589800305668 /* main.m in Sources */,
 				6E6D1E0417DA589800305668 /* AppDelegate.m in Sources */,
 				6E6D1E1717DA590900305668 /* ContentCell.m in Sources */,
+				6EEA7C4218FD09E40001E2B0 /* FBMissingSymbols.m in Sources */,
 				6E6D1E1917DA590900305668 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +351,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/joe/Development/repos/namomedia/TableSample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSample/TableSample-Prefix.pch";
@@ -363,7 +366,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/joe/Development/repos/namomedia/TableSample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSample/TableSample-Prefix.pch";

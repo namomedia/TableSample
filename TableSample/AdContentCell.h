@@ -21,7 +21,7 @@
 #import <Namo/Namo.h>
 #import <UIKit/UIKit.h>
 
-@interface AdContentCell : UITableViewCell<NAMOAdCell>
+@interface AdContentCell : UITableViewCell<NAMOAdFormat>
 
 @property(strong, nonatomic) UILabel *labelTitle;
 @property(strong, nonatomic) UILabel *labelLikes;
@@ -32,5 +32,5 @@
 
 @property(nonatomic, strong) UILabel *labelRepinnedByTitle;
 
-+ (NSString *)reuseIdentifier;
++ (NSString *)formatIdentifier;
 @end
