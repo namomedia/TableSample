@@ -25,10 +25,11 @@
 #import "MainViewController.h"
 
 #import "ContentCell.h"
+#import "AdContentCell.h"
 
 @interface MainViewController ()
 @property(nonatomic, strong) NSArray *content;
-@property(nonatomic, strong) NAMOAdPlacer *adPlacer;
+@property(nonatomic, strong) NAMOTableViewAdPlacer *adPlacer;
 @end
 
 @implementation MainViewController
@@ -54,10 +55,11 @@
   // Namo Media initialization:
   NSString *testId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
   [Namo setTestDevices:[NSArray arrayWithObjects:testId, nil] includeSimulator:YES];
-  self.adPlacer = [NAMOAdPlacer adPlacer];
-  [self.adPlacer bindToTableView:self.tableView];
-  [self.tableView namo_registerAdCellClass:[NAMOAdCellTableSample1 class]];
-  [self.adPlacer requestAds:nil];
+  
+  self.adPlacer = [NAMOTableViewAdPlacer placerForTableView:self.tableView];
+  [self.adPlacer registerAdFormat:AdContentCell.class];
+  
+  [self.adPlacer requestAdsWithTargeting:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

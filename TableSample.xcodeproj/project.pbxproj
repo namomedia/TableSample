@@ -35,7 +35,8 @@
 		6E6D1E4017DA71E000305668 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E3F17DA71E000305668 /* ImageIO.framework */; };
 		6E6D1E4217DA720600305668 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6D1E4117DA720600305668 /* MediaPlayer.framework */; };
 		6EEA7C4218FD09E40001E2B0 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA7C4118FD09E40001E2B0 /* FBMissingSymbols.m */; };
-		D808C9AC18C63BF100EC0FBD /* Namo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D808C9AB18C63BF100EC0FBD /* Namo.framework */; };
+		6EEA7C7D190216E30001E2B0 /* Namo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEA7C7C190216E30001E2B0 /* Namo.framework */; };
+		6EEA7C80190218670001E2B0 /* AdContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA7C7E190218670001E2B0 /* AdContentCell.m */; };
 		D8ACE889185B9E7500F307CD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ACE888185B9E7500F307CD /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +75,9 @@
 		6E6D1E3F17DA71E000305668 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6E6D1E4117DA720600305668 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		6EEA7C4118FD09E40001E2B0 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
-		D808C9AB18C63BF100EC0FBD /* Namo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Namo.framework; sourceTree = "<group>"; };
+		6EEA7C7C190216E30001E2B0 /* Namo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Namo.framework; sourceTree = "<group>"; };
+		6EEA7C7E190218670001E2B0 /* AdContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdContentCell.m; sourceTree = "<group>"; };
+		6EEA7C7F190218670001E2B0 /* AdContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdContentCell.h; sourceTree = "<group>"; };
 		D8ACE888185B9E7500F307CD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -90,7 +93,7 @@
 				6E6D1E2D17DA5A9A00305668 /* CoreLocation.framework in Frameworks */,
 				6E6D1E2B17DA5A8700305668 /* SystemConfiguration.framework in Frameworks */,
 				6E6D1E2917DA5A8000305668 /* StoreKit.framework in Frameworks */,
-				D808C9AC18C63BF100EC0FBD /* Namo.framework in Frameworks */,
+				6EEA7C7D190216E30001E2B0 /* Namo.framework in Frameworks */,
 				6E6D1E2717DA5A7800305668 /* Security.framework in Frameworks */,
 				6E6D1E2517DA5A7100305668 /* QuartzCore.framework in Frameworks */,
 				6E6D1E2317DA5A6800305668 /* MobileCoreServices.framework in Frameworks */,
@@ -128,7 +131,7 @@
 		6E6D1DF217DA589800305668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D808C9AB18C63BF100EC0FBD /* Namo.framework */,
+				6EEA7C7C190216E30001E2B0 /* Namo.framework */,
 				D8ACE888185B9E7500F307CD /* AdSupport.framework */,
 				6E6D1E1C17DA5A4500305668 /* AudioToolbox.framework */,
 				6E6D1E1E17DA5A4E00305668 /* CFNetwork.framework */,
@@ -152,6 +155,8 @@
 		6E6D1DF917DA589800305668 /* TableSample */ = {
 			isa = PBXGroup;
 			children = (
+				6EEA7C7E190218670001E2B0 /* AdContentCell.m */,
+				6EEA7C7F190218670001E2B0 /* AdContentCell.h */,
 				6E6D1E0217DA589800305668 /* AppDelegate.h */,
 				6E6D1E0317DA589800305668 /* AppDelegate.m */,
 				6E6D1E1017DA590900305668 /* ContentCell.h */,
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EEA7C80190218670001E2B0 /* AdContentCell.m in Sources */,
 				6E6D1E0017DA589800305668 /* main.m in Sources */,
 				6E6D1E0417DA589800305668 /* AppDelegate.m in Sources */,
 				6E6D1E1717DA590900305668 /* ContentCell.m in Sources */,
@@ -314,6 +320,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +346,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -351,6 +359,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSample/TableSample-Prefix.pch";
@@ -366,6 +375,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSample/TableSample-Prefix.pch";
